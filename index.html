@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Single Price Grid Component | Frontend Mentor</title>
+  </head>
+  <body class="bg-gray-400 px-0 py-12">
+    <div class="container p-2 mx-auto">
+      <div
+        class="grid md:grid-cols-2 md:grid-rows-1 md:max-w-2xl md:h-full md:mx-auto shadow-2xl"
+      >
+        <section
+          class="shadow-lg bg-white px-6 pt-6 pb-6 h-auto text-left rounded-tr-lg rounded-tl-lg md:col-span-2 md:px-12 md:pt-10 lg:pr-16"
+        >
+          <h1 class="text-varCyan font-semibold mb-3 text-xl">
+            Join our community
+          </h1>
+          <h2 class="text-varYellow font-medium text-lg mb-4">
+            30-day, hassle-free money back guarantee
+          </h2>
+          <p class="text-varBlue font-normal leading-8 text-sm md:text-base">
+            Gain access to our full library of tutorials along with expert code
+            reviews. <br class="hidden lg:block" />
+            Perfect for any developers who are serious about honing their
+            skills.
+          </p>
+        </section>
+        <section
+          class="bg-varCyan px-6 py-6 pb-8 h-auto text-varLight text-left md:rounded-bl-lg md:px-12 md:py-10"
+        >
+          <h2 class="text-varLight font-medium mb-3 text-lg">
+            Monthly Subscription
+          </h2>
+          <p class="text-varLight flex items-center">
+            <!-- Maybe not the best way -->
+            <span class="text-2xl text-white font-medium mr-2 md:text-3xl">
+              &dollar;29
+            </span>
+            <span class="opacity-75"> per month </span>
+          </p>
+          <p class="mt-2 text-sm tracking-wide">
+            Full access for less than &dollar;1 a day
+          </p>
+          <button
+            class="text-center bg-varYellow h-12 w-full mt-6 rounded-md shadow-lg md:mt-6 hover:border-green-900 hover:text-gray-800 transition duration-200 ease hover:shadow-xl"
+            type="button"
+            aria-readonly="true"
+          >
+            Sign Up
+          </button>
+        </section>
+        <section
+          class="bg-varCyan bg-opacity-75 px-6 py-6 rounded-br-lg rounded-bl-lg md:rounded-bl-none md:px-12 md:py-10"
+        >
+          <h2 class="text-varLight font-medium text-xl h-auto mb-4 md:text-lg">
+            Why Us
+          </h2>
+          <p
+            class="leading-7 text-varLight opacity-75 text-base font-normal md:leading-5"
+          >
+            Tutorials by industry experts <br />
+            Peer &amp; expert code review <br />
+            Coding exercises Access to our GitHub repos <br />
+            Community forum <br />
+            Flashcard decks <br />
+            New videos every week <br />
+          </p>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
