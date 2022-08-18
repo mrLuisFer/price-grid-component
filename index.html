@@ -10,70 +10,98 @@
       href="./images/favicon-32x32.png"
     />
     <title>Single Price Grid Component | Frontend Mentor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-gray-400 px-0 py-12">
-    <div class="container p-2 mx-auto">
+  <body class="bg-lightgray px-0 py-12">
+    <div class="container px-8 md:p-2 lg:p-0 mx-auto">
       <div
-        class="grid md:grid-cols-2 md:grid-rows-1 md:max-w-2xl md:h-full md:mx-auto shadow-2xl"
+        class="grid md:grid-cols-2 md:grid-rows-1 md:max-w-2xl md:h-full transition md:mx-auto shadow-xl hover:shadow-2xl"
       >
         <section
-          class="shadow-lg bg-white px-6 pt-6 pb-6 h-auto text-left rounded-tr-lg rounded-tl-lg md:col-span-2 md:px-12 md:pt-10 lg:pr-16"
+          class="shadow-lg bg-white px-6 pt-6 pb-6 h-auto text-left rounded-tr-lg rounded-tl-lg md:col-span-2 md:px-12 lg:px-10 md:pt-10 lg:pr-16"
         >
-          <h1 class="text-varCyan font-semibold mb-3 text-xl">
+          <h1 class="text-varCyan font-semibold mb-3 text-xl md:mb-4">
             Join our community
           </h1>
-          <h2 class="text-varYellow font-medium text-lg mb-4">
+          <h2 class="text-brightyellow font-medium text-lg mb-4 md:mb-2">
             30-day, hassle-free money back guarantee
           </h2>
-          <p class="text-varBlue font-normal leading-8 text-sm md:text-base">
+          <p
+            class="text-grayishblue font-normal leading-6 md:leading-8 text-sm md:text-base"
+          >
             Gain access to our full library of tutorials along with expert code
             reviews. <br class="hidden lg:block" />
             Perfect for any developers who are serious about honing their
             skills.
           </p>
         </section>
+
         <section
-          class="bg-varCyan px-6 py-6 pb-8 h-auto text-varLight text-left md:rounded-bl-lg md:px-12 md:py-10"
+          class="bg-varCyan px-6 py-6 pb-8 h-auto text-varLight text-left md:rounded-bl-lg md:px-12 lg:px-10 md:py-10"
         >
-          <h2 class="text-varLight font-medium mb-3 text-lg">
+          <h2 class="text-white font-medium mb-3 text-lg">
             Monthly Subscription
           </h2>
           <p class="text-varLight flex items-center">
-            <!-- Maybe not the best way -->
-            <span class="text-2xl text-white font-medium mr-2 md:text-3xl">
+            <span class="text-white font-medium mr-2 text-2xl md:text-3xl">
               &dollar;29
             </span>
-            <span class="opacity-75"> per month </span>
+            <span class="text-lightgray opacity-70"> per month </span>
           </p>
-          <p class="mt-2 text-sm tracking-wide">
+          <p class="mt-2 text-sm md:text-base text-white">
             Full access for less than &dollar;1 a day
           </p>
           <button
-            class="text-center bg-varYellow h-12 w-full mt-6 rounded-md shadow-lg md:mt-6 hover:border-green-900 hover:text-gray-800 transition duration-200 ease hover:shadow-xl"
+            class="text-center bg-brightyellow text-white flex items-center justify-center font-bold h-12 w-full mt-6 rounded-md md:mt-7 transition duration-200 ease shadow-lg md:shadow-xl hover:shadow-xl sm:max-w-xs md:py-6 select-none"
             type="button"
             aria-readonly="true"
+            aria-allowed-attr
           >
             Sign Up
           </button>
         </section>
+
         <section
-          class="bg-varCyan bg-opacity-75 px-6 py-6 rounded-br-lg rounded-bl-lg md:rounded-bl-none md:px-12 md:py-10"
+          class="bg-varCyan bg-opacity-75 px-6 py-6 rounded-br-lg rounded-bl-lg md:rounded-bl-none md:px-12 lg:px-10 md:py-10"
         >
-          <h2 class="text-varLight font-medium text-xl h-auto mb-4 md:text-lg">
+          <h2
+            class="text-white font-medium text-xl h-auto mb-4 md:mb-3 md:text-lg"
+          >
             Why Us
           </h2>
           <p
-            class="leading-7 text-varLight opacity-75 text-base font-normal md:leading-5"
+            class="text-lightgray opacity-75 text-sm sm:text-base md:text-sm font-normal leading-6 md:leading-[1.4rem]"
           >
             Tutorials by industry experts <br />
             Peer &amp; expert code review <br />
-            Coding exercises Access to our GitHub repos <br />
+            Coding exercises <br />
+            Access to our GitHub repos <br />
             Community forum <br />
             Flashcard decks <br />
             New videos every week <br />
           </p>
         </section>
       </div>
+    </div>
+    <div class="mt-10">
+      <p
+        class="text-center text-varCyan transition opacity-60 hover:opacity-100 select-none"
+      >
+        Made with &#9829; by
+        <a
+          href="https://github.com/mrLuisFer"
+          target="_blank"
+          rel="noreferrer noopener"
+          title="github/mrLuisFer"
+          class="font-bold"
+          >mrLuisFer</a
+        >
+      </p>
     </div>
     <script type="module" src="./main.js"></script>
   </body>
